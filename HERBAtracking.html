@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order | her.ba</title>
+    <link rel="stylesheet" href="HERBAstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="HERBAindex.html" class="logo">her<span>.</span>ba</a>
+        </div>
+        <nav>
+            <a href="HERBAindex.html">Home</a>
+            <a href="HERBAabout.html">Brand Story</a>
+            <a href="HERBAcontact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Track Your Detox</h1>
+        <p>Follow your package's journey from our kitchen to your door.</p>
+    </div>
+
+    <section class="page-content">
+        <div class="form-container" style="text-align: center;">
+            <h2 class="section-title" style="margin-bottom: 30px;">Order Status</h2>
+            <form id="trackForm">
+                <div class="form-group">
+                    <input type="text" id="trackId" required placeholder="Enter Order ID (e.g. HRB-12345)"
+                        style="text-align: center; font-size: 18px; padding: 20px;">
+                </div>
+                <button type="submit" class="btn">Track Now</button>
+            </form>
+
+            <div id="trackResult">
+                <h3 style="margin-bottom: 20px;">Order <span id="displayTrackId"></span></h3>
+
+                <div class="status-step completed">
+                    <div class="status-dot"></div>
+                    <div>Order Received & Paid</div>
+                </div>
+                <div class="status-step completed">
+                    <div class="status-dot"></div>
+                    <div>Brewing Your Detox</div>
+                </div>
+                <div class="status-step active">
+                    <div class="status-dot"></div>
+                    <div>Out for Delivery (ETA: Today)</div>
+                </div>
+                <div class="status-step">
+                    <div class="status-dot"></div>
+                    <div>Delivered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">© 2026 her.ba | Balance Through Nature</p>
+    </footer>
+
+    <script src="HERBAscript.js"></script>
+</body>
+
+</html>
